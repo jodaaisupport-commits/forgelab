@@ -1,0 +1,3 @@
+export const de={login:'Anmelden',register:'Registrieren',dashboard:'Übersicht',models:'Modelle',datasets:'Datensätze',training:'Training',playground:'Playground',connectors:'Connectoren',admin:'Admin CMS',settings:'Einstellungen',download:'Projekt als ZIP laden'};
+export const t=k=>de[k]||k;
+export function toast(message,type='info'){const region=document.querySelector('#toast-region');const el=document.createElement('div');el.className=`toast ${type}`;el.textContent=message;region.append(el);setTimeout(()=>el.remove(),3500)}

@@ -1,0 +1,1 @@
+export const connectorActions={connect(c){c.connected=true},disconnect(c){c.connected=false;c.lastSync=null},sync(c){if(!c.connected)throw Error('Bitte verbinde den Connector zuerst.');c.syncs++;c.lastSync=new Date().toISOString()}};
